@@ -1,0 +1,41 @@
+name: authentication_view_module
+description: A new Flutter module project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_sign_in: ^6.1.4
+  sign_in_with_apple: ^5.0.0
+  app_configuration_service:
+    git: https://github.com/niypoo/app_configuration_service.git
+  firebase_authentication_service:
+    git: https://github.com/niypoo/firebase_authentication_service.git
+  loading_service:
+    git: https://github.com/niypoo/loading_service.git
+  bottom_sheet_helper:
+    git: https://github.com/niypoo/bottom_sheet_helper.git
+  launch_url_helper:
+    git: https://github.com/niypoo/launch_url_helper.git
+  connectivity_service:
+    git:  https://github.com/niypoo/connectivity_service.git
+  snackbar_helper:
+   git:  https://github.com/niypoo/snackbar_helper.git
+  dialog_helper:
+    git: https://github.com/niypoo/dialog_helper.git
+  fly_ui:
+    git: https://github.com/niypoo/fly_ui.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
