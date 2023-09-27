@@ -13,7 +13,8 @@ dependencies:
   google_sign_in: ^6.1.4
   sign_in_with_apple: ^5.0.0
   app_configuration_service:
-    git: https://github.com/niypoo/app_configuration_service.git
+   git: 
+      url: git@github.com:niypoo/app_configuration_service.git
   firebase_authentication_service:
     git: https://github.com/niypoo/firebase_authentication_service.git
   loading_service:
