@@ -19,7 +19,8 @@ dependencies:
   loading_service:
     git: https://github.com/niypoo/loading_service.git
   bottom_sheet_helper:
-    git: https://github.com/niypoo/bottom_sheet_helper.git
+    git: 
+      url: git@github.com:niypoo/bottom_sheet_helper.git
   launch_url_helper:
     git: https://github.com/niypoo/launch_url_helper.git
   connectivity_service:
