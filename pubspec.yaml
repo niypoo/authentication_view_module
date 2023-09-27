@@ -31,7 +31,8 @@ dependencies:
   dialog_helper:
     git: https://github.com/niypoo/dialog_helper.git
   fly_ui:
-    git: https://github.com/niypoo/fly_ui.git
+    git:
+      url: git@github.com:niypoo/fly_ui.git
 
 dev_dependencies:
   flutter_test:
