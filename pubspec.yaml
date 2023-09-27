@@ -16,20 +16,26 @@ dependencies:
    git: 
       url: git@github.com:niypoo/app_configuration_service.git
   firebase_authentication_service:
-    git: https://github.com/niypoo/firebase_authentication_service.git
+    git: 
+      url: git@github.com:niypoo/firebase_authentication_service.git
   loading_service:
-    git: https://github.com/niypoo/loading_service.git
+    git: 
+      url: git@github.com:niypoo/loading_service.git
   bottom_sheet_helper:
     git: 
       url: git@github.com:niypoo/bottom_sheet_helper.git
   launch_url_helper:
-    git: https://github.com/niypoo/launch_url_helper.git
+    git: 
+      url: git@github.com:niypoo/launch_url_helper.git
   connectivity_service:
-    git:  https://github.com/niypoo/connectivity_service.git
+    git: 
+      url: git@github.com:niypoo/connectivity_service.git
   snackbar_helper:
-   git:  https://github.com/niypoo/snackbar_helper.git
+   git: 
+      url: git@github.com:niypoo/snackbar_helper.git
   dialog_helper:
-    git: https://github.com/niypoo/dialog_helper.git
+    git: 
+      url: git@github.com:niypoo/dialog_helper.git
   fly_ui:
     git:
       url: git@github.com:niypoo/fly_ui.git
