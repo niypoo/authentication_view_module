@@ -23,7 +23,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: aef4dbcf3efc234d29b09c773fa122f7dde5416b
-      url: "https://github.com/niypoo/app_configuration_service.git"
+      url: " git@github.com:niypoo/app_configuration_service.git"
     source: git
     version: "1.0.0+1"
   args:
@@ -64,7 +64,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: "078d447fc3c751389c26b22ec7a3ee45049baa81"
-      url: "https://github.com/niypoo/bottom_sheet_helper.git"
+      url: " git@github.com:niypoo/bottom_sheet_helper.git"
     source: git
     version: "1.0.0+1"
   cached_network_image:
@@ -137,7 +137,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: "4bf9c767f30a45880d39221878c89bf658ec1bc2"
-      url: "https://github.com/niypoo/connectivity_service.git"
+      url: " git@github.com:niypoo/connectivity_service.git"
     source: git
     version: "1.0.0+1"
   crypto:
@@ -162,7 +162,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: "9922fd78919bfeef55f16ba10136dadfdf6dbda0"
-      url: "https://github.com/niypoo/dialog_helper.git"
+      url: " git@github.com:niypoo/dialog_helper.git"
     source: git
     version: "1.0.0+1"
   fake_async:
@@ -219,7 +219,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: ad1b1207e05b3a60a47ec65412cb51c56e041603
-      url: "https://github.com/niypoo/firebase_authentication_service.git"
+      url: " git@github.com:niypoo/firebase_authentication_service.git"
     source: git
     version: "1.0.0+1"
   firebase_core:
@@ -331,7 +331,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: "9e81f96c02261e72bd03e4ea49afa26859cca847"
-      url: "https://github.com/niypoo/fly_ui.git"
+      url: " git@github.com:niypoo/fly_ui.git"
     source: git
     version: "1.0.0+1"
   get:
@@ -420,7 +420,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: fded03b4c78a6e92aa9da690a94b22201c758fc8
-      url: "https://github.com/niypoo/launch_url_helper.git"
+      url: " git@github.com:niypoo/launch_url_helper.git"
     source: git
     version: "1.0.0+1"
   lints:
@@ -437,7 +437,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: bfc8086cde5bb2e60eaf261497060dada8396f69
-      url: "https://github.com/niypoo/loading_service.git"
+      url: " git@github.com:niypoo/loading_service.git"
     source: git
     version: "1.0.0+1"
   matcher:
@@ -619,7 +619,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: "17c16de4060a5a5bf873097e99444e386c61142c"
-      url: "https://github.com/niypoo/snackbar_helper.git"
+      url: " git@github.com:niypoo/snackbar_helper.git"
     source: git
     version: "1.0.0+1"
   source_span:
