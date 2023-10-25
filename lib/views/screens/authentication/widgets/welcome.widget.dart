@@ -27,14 +27,14 @@ class WelcomeWidget extends StatelessWidget {
         Text(
           'Authentication Screen Title'.tr,
           textAlign: TextAlign.center,
-          style: Get.textTheme.titleLarge,
+          style: Get.textTheme.titleLarge!.copyWith(color: Get.theme.secondaryHeaderColor),
         ),
 
         // Title
         Text(
           'Authentication Screen Text'.tr,
           textAlign: TextAlign.center,
-          style: Get.textTheme.bodyMedium,
+          style: Get.textTheme.bodyMedium!.copyWith(color: Get.theme.secondaryHeaderColor),
         ),
       ],
     );

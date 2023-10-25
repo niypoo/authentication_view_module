@@ -13,6 +13,7 @@ class AuthenticationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlyScaffold(
+      backgroundColor: Get.theme.primaryColor,
       child: FlyScaffoldPadding(
         // landscape & portrait view
         child: context.isLandscape
