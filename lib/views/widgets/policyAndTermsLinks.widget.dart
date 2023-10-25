@@ -1,6 +1,7 @@
 import 'package:app_configuration_service/appInfo.config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:launch_url_helper/launchURL.service.dart';
 
 class PolicyAndTermsLinksWidget extends StatelessWidget {
   const PolicyAndTermsLinksWidget({
@@ -26,13 +27,12 @@ class PolicyAndTermsLinksWidget extends StatelessWidget {
             ),
             InkWell(
               borderRadius: BorderRadius.circular(AppConfigService.to.space!.m),
-              // onTap: () => LaunchUrl.open(Config.termsUrl(
-              //     LocalesController.to.currentLocale.languageCode)),
+              onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
               child: Text(
                 ' ${'Terms'.tr}',
                 style: Get.textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Get.theme.colorScheme.secondary,
+                  color: Get.theme.secondaryHeaderColor,
                 ),
               ),
             ),
@@ -42,13 +42,12 @@ class PolicyAndTermsLinksWidget extends StatelessWidget {
             ),
             InkWell(
               borderRadius: BorderRadius.circular(AppConfigService.to.space!.m),
-              // onTap: () => LaunchUrl.open(Config.privacyUrl(
-              //     LocalesController.to.currentLocale.languageCode)),
+             onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
               child: Text(
                 "Privacy Policy".tr,
                 style: Get.textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Get.theme.colorScheme.secondary,
+                  color: Get.theme.secondaryHeaderColor,
                 ),
               ),
             ),
