@@ -19,8 +19,8 @@ class WelcomeWidget extends StatelessWidget {
           padding: EdgeInsets.all(AppConfigService.to.space!.m),
           child: FlyImage(
             url: AppConfigService.to.appIcon,
-            width: 250,
-            height: 250,
+            width: 200,
+            height: 200,
           ),
         ),
 
