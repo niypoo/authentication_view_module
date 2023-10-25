@@ -99,7 +99,7 @@ Widget getButtonIcons({
         color: Get.theme.secondaryHeaderColor,
       );
     case AuthenticationButtonStyle.Google:
-      return Image.asset('assets/images/google_light.png',width: 45,height: 45,);
+      return Image.asset('assets/images/google_light.png',width: size,height: size,);
     case AuthenticationButtonStyle.FaceBook:
       return Icon(
         UniconsLine.facebook,
