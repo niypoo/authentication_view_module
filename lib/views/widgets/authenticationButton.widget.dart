@@ -22,7 +22,7 @@ class AuthenticationButtonWidget extends StatelessWidget {
       width: (Get.context!.isLandscape ? (context.width / 2) : context.width) *
           0.4,
       margin: EdgeInsets.only(
-        bottom: AppConfigService.to.space!.s,
+        bottom: AppConfigService.to.space!.xs,
       ),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
@@ -33,7 +33,7 @@ class AuthenticationButtonWidget extends StatelessWidget {
             ),
           ),
           padding: EdgeInsets.symmetric(
-            vertical: AppConfigService.to.space!.xs,
+            vertical: AppConfigService.to.space!.s,
           ),
         ),
         onPressed: onPressed as void Function()?,
@@ -99,11 +99,7 @@ Widget getButtonIcons({
         color: Get.theme.secondaryHeaderColor,
       );
     case AuthenticationButtonStyle.Google:
-      return Icon(
-        UniconsLine.google,
-        size: size,
-        color: Get.theme.iconTheme.color,
-      );
+      return Image.asset('assets/images/google_light.png',width: size, height: size,);
     case AuthenticationButtonStyle.FaceBook:
       return Icon(
         UniconsLine.facebook,

@@ -12,28 +12,29 @@ class WelcomeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // Loading
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         //  Icon
         Padding(
           padding: EdgeInsets.all(AppConfigService.to.space!.m),
           child: FlyImage(
             url: AppConfigService.to.appIcon,
-            width: 100,
-            height: 100,
+            width: 250,
+            height: 250,
           ),
         ),
 
         // Title
         Text(
           'Authentication Screen Title'.tr,
-          textAlign: TextAlign.center,
-          style: Get.textTheme.titleLarge!.copyWith(color: Get.theme.secondaryHeaderColor),
+          textAlign: TextAlign.start,
+          style: Get.textTheme.headlineMedium!.copyWith(color: Get.theme.secondaryHeaderColor),
         ),
 
         // Title
         Text(
           'Authentication Screen Text'.tr,
-          textAlign: TextAlign.center,
+          textAlign: TextAlign.start,
           style: Get.textTheme.bodyMedium!.copyWith(color: Get.theme.secondaryHeaderColor),
         ),
       ],

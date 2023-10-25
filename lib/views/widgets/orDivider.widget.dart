@@ -25,20 +25,16 @@ class OrDivider extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                  child: Divider(
-                    color: color ?? Get.textTheme.subtitle2!.color,
-                  ),
+                  child: Divider(color: Get.theme.secondaryHeaderColor),
                 ),
                 SizedBox(width: AppConfigService.to.space!.s),
                 Expanded(
-                  child: Divider(
-                    color: color ?? Get.textTheme.subtitle2!.color,
-                  ),
+                  child: Divider(color: Get.theme.secondaryHeaderColor),
                 ),
               ],
             ),
             Container(
-              color: Get.theme.scaffoldBackgroundColor,
+              color: Get.theme.primaryColor,
               width: 30,
               height: 30,
               child: Center(
