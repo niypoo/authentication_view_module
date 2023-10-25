@@ -39,7 +39,6 @@ class OrDivider extends StatelessWidget {
                   "Or".tr,
                   style: Get.textTheme.bodyMedium!.copyWith(
                     color: Get.theme.secondaryHeaderColor,
-                    fontSize: 12,
                   ),
                 ),
               ),
