@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:bottom_sheet_helper/services/advanceConformationSheet.helper.dart';
+import 'package:bottom_sheet_helper/services/conformationSheet.helper.dart';
 import 'package:bottom_sheet_helper/services/customBottomSheet.helper.dart';
 import 'package:connectivity_service/connectivity.service.dart';
 import 'package:dialog_helper/dialogs.helper.dart';
@@ -21,8 +22,11 @@ class MyAccountSettingsService {
 
       //if offline return null
       if (!status) return;
-      dynamic confirm =
-          await DialogsHelper.show(content: 'Do you want sign-out'.tr);
+
+      final dynamic confirm = await ConformationSheetHelper.show(
+        title: 'Confirmation !'.tr,
+        subTitle: 'Do you want sign-out'.tr,
+      );
 
       if (confirm == null || (confirm != null && !confirm)) return;
 
