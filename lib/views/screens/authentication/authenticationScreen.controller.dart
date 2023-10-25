@@ -44,11 +44,13 @@ class AuthenticationScreenController extends GetxController {
           // loading
           LoadingService.to.on();
           credential = await AppleAuthenticationService().signIn();
+          LoadingService.to.off();
           break;
         case AuthenticationProvider.Google:
           // loading
           LoadingService.to.on();
           credential = await GoogleAuthenticationService().signIn();
+          LoadingService.to.off();
           break;
         case AuthenticationProvider.Anonymously:
 
@@ -63,6 +65,7 @@ class AuthenticationScreenController extends GetxController {
             // loading
             LoadingService.to.on();
             credential = await AnonymousAuthenticationService().signIn();
+            LoadingService.to.off();
           }
 
           break;
