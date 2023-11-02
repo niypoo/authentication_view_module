@@ -1,6 +1,7 @@
 import 'package:app_configuration_service/appInfo.config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:fly_ui/extensions/responsive.extension.dart';
 
 class OrDivider extends StatelessWidget {
   const OrDivider({
