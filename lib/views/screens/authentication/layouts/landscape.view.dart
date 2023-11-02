@@ -12,16 +12,18 @@ class AuthenticationLandscapeLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FlyLandscapeView(
-      childA: WelcomeWidget(),
-      childB: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Buttons Of Authentications
-          AuthenticationProvidersButtons(),
-
-          // Policy and terms
-          PolicyAndTermsLinksWidget(),
-        ],
+      childA: SingleChildScrollView(child: WelcomeWidget()),
+      childB: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Buttons Of Authentications
+            AuthenticationProvidersButtons(),
+      
+            // Policy and terms
+            PolicyAndTermsLinksWidget(),
+          ],
+        ),
       ),
     );
   }
