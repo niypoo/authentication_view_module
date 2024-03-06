@@ -29,8 +29,7 @@ class OrDivider extends StatelessWidget {
               ],
             ),
             Container(
-              decoration: BoxDecoration(
-                color: Get.theme.primaryColor,
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
               width: 30,

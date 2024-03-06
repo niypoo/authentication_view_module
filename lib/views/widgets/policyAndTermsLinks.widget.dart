@@ -26,7 +26,6 @@ class PolicyAndTermsLinksWidget extends StatelessWidget {
               ),
             ),
             InkWell(
-              borderRadius: BorderRadius.circular(AppConfigService.to.space!.m),
               onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
               child: Text(
                 ' ${'Terms'.tr}',

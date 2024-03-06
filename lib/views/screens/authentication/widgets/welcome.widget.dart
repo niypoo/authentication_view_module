@@ -14,6 +14,7 @@ class WelcomeWidget extends StatelessWidget {
     // Loading
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //  Icon
         FlyImage(
@@ -27,6 +28,7 @@ class WelcomeWidget extends StatelessWidget {
         // Title
         Text(
           'Authentication Screen Title'.tr,
+          textAlign: TextAlign.start,
           style: Get.textTheme.headlineMedium!.copyWith(
             fontSize: 16.sp,
           ),
@@ -35,6 +37,7 @@ class WelcomeWidget extends StatelessWidget {
         // Title
         Text(
           'Authentication Screen Text'.tr,
+          textAlign: TextAlign.start,
           style: Get.textTheme.bodyMedium!.copyWith(
             fontSize: 11.sp,
             height: 1.2,
