@@ -14,7 +14,6 @@ class WelcomeWidget extends StatelessWidget {
     // Loading
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //  Icon
         FlyImage(

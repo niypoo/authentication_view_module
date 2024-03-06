@@ -1,4 +1,3 @@
-import 'package:app_configuration_service/appInfo.config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fly_ui/extensions/responsive.extension.dart';
@@ -17,23 +16,20 @@ class OrDivider extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Row(
+            const Row(
               children: [
-                const Expanded(
-                  child: Divider(),
-                ),
-                SizedBox(width: AppConfigService.to.space!.s),
-                const Expanded(
+                Expanded(
                   child: Divider(),
                 ),
               ],
             ),
             Container(
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
+                color: Get.theme.scaffoldBackgroundColor,
                 shape: BoxShape.circle,
               ),
-              width: 30,
-              height: 30,
+              width: 25.sp,
+              height: 25.sp,
               child: Center(
                 child: Text(
                   "Or".tr,

@@ -5,6 +5,7 @@ import 'package:authentication_view_module/views/widgets/authenticationButton.wi
 import 'package:authentication_view_module/views/widgets/orDivider.widget.dart';
 import 'package:firebase_authentication_service/enums/authenticationProvider.enum.dart';
 import 'package:flutter/material.dart';
+import 'package:fly_ui/extensions/responsive.extension.dart';
 
 import 'package:get/get.dart';
 
@@ -20,10 +21,16 @@ class AuthenticationProvidersButtons
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+
+          // hint
+          Padding(
+            padding: EdgeInsets.only(bottom: 15.sp),
+            child: Text(
               'You can access all services with one click, press any button below to log in.'
-                  .tr),
-          const Divider(),
+                  .tr,
+              style: Get.textTheme.labelSmall,
+            ),
+          ),
           //##  IOS Button Dark ## //
           if (GetPlatform.isIOS && AppConfigService.to.authenticationWithApple)
             AuthenticationButtonWidget(
