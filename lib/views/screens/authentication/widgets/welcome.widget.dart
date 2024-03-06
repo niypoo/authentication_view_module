@@ -18,8 +18,8 @@ class WelcomeWidget extends StatelessWidget {
         //  Icon
         FlyImage(
           url: AppConfigService.to.appIcon,
-          width: 55.sp,
-          height: 55.sp,
+          width: 100.sp,
+          height: 100.sp,
         ),
 
         SizedBox(height: 15.sp),
