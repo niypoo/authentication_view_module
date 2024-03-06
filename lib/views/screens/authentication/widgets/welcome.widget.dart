@@ -16,21 +16,18 @@ class WelcomeWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         //  Icon
-        Padding(
-          padding: EdgeInsets.all(AppConfigService.to.space!.m),
-          child: FlyImage(
-            url: AppConfigService.to.appIcon,
-            width: 40.w,
-            height: 40.w,
-          ),
+        FlyImage(
+          url: AppConfigService.to.appIcon,
+          width: 40.w,
+          height: 40.w,
         ),
+
+        SizedBox(height: 15.sp),
 
         // Title
         Text(
           'Authentication Screen Title'.tr,
-          textAlign: TextAlign.start,
           style: Get.textTheme.headlineMedium!.copyWith(
-            color: Get.theme.secondaryHeaderColor,
             fontSize: 16.sp,
           ),
         ),
@@ -38,9 +35,7 @@ class WelcomeWidget extends StatelessWidget {
         // Title
         Text(
           'Authentication Screen Text'.tr,
-          textAlign: TextAlign.start,
           style: Get.textTheme.bodyMedium!.copyWith(
-            color: Get.theme.secondaryHeaderColor,
             fontSize: 11.sp,
             height: 1.2,
           ),

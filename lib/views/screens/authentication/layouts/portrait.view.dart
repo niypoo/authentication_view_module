@@ -2,6 +2,7 @@ import 'package:authentication_view_module/views/screens/authentication/widgets/
 import 'package:authentication_view_module/views/screens/authentication/widgets/welcome.widget.dart';
 import 'package:authentication_view_module/views/widgets/policyAndTermsLinks.widget.dart';
 import 'package:flutter/material.dart';
+import 'package:fly_ui/extensions/responsive.extension.dart';
 
 class AuthenticationPortraitLayout extends StatelessWidget {
   const AuthenticationPortraitLayout({
@@ -10,25 +11,28 @@ class AuthenticationPortraitLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Stack(
+    return Stack(
       alignment: Alignment.center,
       children: [
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Spacer(),
+            const Spacer(),
 
             // Loading
-            WelcomeWidget(),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.sp),
+              child: const WelcomeWidget(),
+            ),
 
-            Spacer(),
+            const Spacer(),
 
             // Buttons Of Authentications
             // Buttons Of Authentications
-            AuthenticationProvidersButtons(),
+            const AuthenticationProvidersButtons(),
 
             // Policy and terms
-            PolicyAndTermsLinksWidget(),
+            const PolicyAndTermsLinksWidget(),
           ],
         ),
       ],

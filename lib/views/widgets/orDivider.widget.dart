@@ -19,28 +19,26 @@ class OrDivider extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(
-                  child: Divider(color: Get.theme.secondaryHeaderColor),
+                const Expanded(
+                  child: Divider(),
                 ),
                 SizedBox(width: AppConfigService.to.space!.s),
-                Expanded(
-                  child: Divider(color: Get.theme.secondaryHeaderColor),
+                const Expanded(
+                  child: Divider(),
                 ),
               ],
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Get.theme.primaryColor,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Get.theme.secondaryHeaderColor)),
+                color: Get.theme.primaryColor,
+                shape: BoxShape.circle,
+              ),
               width: 30,
               height: 30,
               child: Center(
                 child: Text(
                   "Or".tr,
-                  style: Get.textTheme.bodyMedium!.copyWith(
-                    color: Get.theme.secondaryHeaderColor,
-                  ),
+                  style: Get.textTheme.bodyMedium,
                 ),
               ),
             ),

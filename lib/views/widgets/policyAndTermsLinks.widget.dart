@@ -22,7 +22,7 @@ class PolicyAndTermsLinksWidget extends StatelessWidget {
             FittedBox(
               child: Text(
                 "By using you agree on".tr,
-                style: Get.textTheme.bodySmall!.copyWith(color: Get.theme.secondaryHeaderColor),
+                style: Get.textTheme.bodySmall,
               ),
             ),
             InkWell(
@@ -32,22 +32,21 @@ class PolicyAndTermsLinksWidget extends StatelessWidget {
                 ' ${'Terms'.tr}',
                 style: Get.textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Get.theme.secondaryHeaderColor,
                 ),
               ),
             ),
             Text(
               ' ${"and".tr} ',
-              style: Get.textTheme.bodySmall!.copyWith(color: Get.theme.secondaryHeaderColor),
+              style: Get.textTheme.bodySmall,
             ),
             InkWell(
               borderRadius: BorderRadius.circular(AppConfigService.to.space!.m),
-             onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
+              onTap: () =>
+                  LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
               child: Text(
                 "Privacy Policy".tr,
                 style: Get.textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Get.theme.secondaryHeaderColor,
                 ),
               ),
             ),
