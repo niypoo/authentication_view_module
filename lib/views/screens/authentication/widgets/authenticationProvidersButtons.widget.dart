@@ -20,6 +20,10 @@ class AuthenticationProvidersButtons
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Text(
+              'You can access all services with one click, press any button below to log in.'
+                  .tr),
+          const Divider(),
           //##  IOS Button Dark ## //
           if (GetPlatform.isIOS && AppConfigService.to.authenticationWithApple)
             AuthenticationButtonWidget(
