@@ -10,9 +10,9 @@ class OrDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 2.h),
+      padding: EdgeInsets.symmetric(vertical: 15.sp),
       child: SizedBox(
-        width: context.width * (context.isLandscape ? 0.25 : 0.5),
+        // width: context.width * (context.isLandscape ? 0.25 : 0.5),
         child: Stack(
           alignment: Alignment.center,
           children: [
