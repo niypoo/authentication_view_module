@@ -85,11 +85,11 @@ class MyAccountSettingsService {
     required String subTitle,
   }) async {
     //Get Authentication Type
-    Credential? credential = await (CustomBottomSheetHelper.show(
+    Credential? credential = await CustomBottomSheetHelper.show(
       title: title,
       subTitle: subTitle,
       child: const PermanentAccountScreen(),
-    ) as FutureOr<Credential?>);
+    ) as Credential?;
 
     if (credential != null) {
       try {
