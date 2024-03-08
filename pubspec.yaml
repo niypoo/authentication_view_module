@@ -10,8 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  google_sign_in: ^6.1.4
-  sign_in_with_apple: ^5.0.0
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.0.0
   app_configuration_service:
    git: 
       url: git@github.com:niypoo/app_configuration_service.git
