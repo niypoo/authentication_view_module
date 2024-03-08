@@ -11,7 +11,7 @@ class AuthenticationLandscapeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FlyLandscapeScrollableView(
+    return const FlyLandscapeView(
       childA: SingleChildScrollView(child: WelcomeWidget()),
       childB: SingleChildScrollView(
         child: Column(
