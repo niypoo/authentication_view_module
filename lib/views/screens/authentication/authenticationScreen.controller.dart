@@ -76,6 +76,7 @@ class AuthenticationScreenController extends GetxController {
       // return back with credential=
       return credential;
     } catch (e) {
+      print('[[[[[[credential error !!]]]]]] ${e}');
       // loading
       LoadingService.to.off();
       return null;
