@@ -50,6 +50,7 @@ class AuthenticationScreenController extends GetxController {
           // loading
           LoadingService.to.on();
           credential = await GoogleAuthenticationService().signIn();
+          print('[[[[[[credential]]]]]] ${credential}');
           LoadingService.to.off();
           break;
         case AuthenticationProvider.Anonymously:
