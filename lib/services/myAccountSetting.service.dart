@@ -64,7 +64,7 @@ class MyAccountSettingsService {
         title: 'Confirmation !'.tr,
         subTitle: "Delete my account first confirm title".tr,
         icon: UniconsLine.trash,
-      ) as FutureOr<bool?>);
+      )) as bool?;
 
       if (confirm != null && confirm) {
         LoadingService.to.on();
@@ -72,7 +72,8 @@ class MyAccountSettingsService {
       }
       //switch on
       LoadingService.to.off();
-    } catch (_) {
+    } catch (_,__) {
+      print('ERROR $_ $__');
       LoadingService.to.off();
     }
   }
