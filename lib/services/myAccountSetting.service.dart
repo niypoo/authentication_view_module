@@ -73,7 +73,6 @@ class MyAccountSettingsService {
       //switch on
       LoadingService.to.off();
     } catch (_,__) {
-      print('ERROR $_ $__');
       LoadingService.to.off();
     }
   }
