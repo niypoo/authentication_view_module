@@ -75,7 +75,7 @@ Color? getButtonColors(AuthenticationButtonStyle buttonType) {
     case AuthenticationButtonStyle.Twitter:
       return const Color(0xFF1DA1F2);
     case AuthenticationButtonStyle.Anonymously:
-      return Colors.grey[300];
+      return Colors.black;
     default:
       return Colors.white;
   }
