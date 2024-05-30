@@ -81,7 +81,7 @@ Color? getButtonColors(AuthenticationButtonStyle buttonType) {
   }
 }
 
-Widget getButtonIcons({
+Icon getButtonIcons({
   AuthenticationButtonStyle? buttonType,
   double size = 20.0,
 }) {
@@ -102,6 +102,7 @@ Widget getButtonIcons({
       return Icon(
         UniconsLine.google,
         size: size,
+        color: Get.theme.iconTheme.color,
       );
     case AuthenticationButtonStyle.FaceBook:
       return Icon(
@@ -122,6 +123,10 @@ Widget getButtonIcons({
         color: Get.theme.iconTheme.color,
       );
     default:
-      return const SizedBox.shrink();
+      return Icon(
+        UniconsLine.lock_open_alt,
+        size: size,
+        color: Get.theme.iconTheme.color,
+      );
   }
 }
