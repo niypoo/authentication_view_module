@@ -10,7 +10,7 @@ class AuthenticationsPages {
       name: AuthenticationsRoutesNames.AUTHENTICATION,
       page: () => const AuthenticationScreen(),
       binding: AuthenticationScreenBinding(),
-      customTransition: FlyRouteTransition(),
+      customTransition: FlySharedAxisTransition(),
     ),
   ];
 }
