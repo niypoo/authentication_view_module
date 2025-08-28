@@ -4,7 +4,7 @@ import 'package:authentication_view_module/services/anonymousAuthentication.serv
 import 'package:authentication_view_module/services/appleAuthentication.service.dart';
 import 'package:authentication_view_module/services/googleAuthentication.service.dart';
 import 'package:firebase_authentication_service/enums/authenticationProvider.enum.dart';
-import 'package:firebase_authentication_service/models/credential.model.dart';
+// import 'package:firebase_authentication_service/models/credential.model.dart';
 import 'package:get/get.dart';
 import 'package:loading_service/loading.service.dart';
 import 'package:unicons/unicons.dart';
@@ -29,7 +29,7 @@ class AuthenticationScreenController extends GetxController {
   }
 
   /// handle authentication types when user tap on a social butns
-  Future<Credential?> signIn(AuthenticationProvider provider) async {
+  Future<void> signIn(AuthenticationProvider provider) async {
     try {
       //check internet connection first
       bool networkState = await ConnectiveService.to.isLiveWithNotification();
@@ -37,19 +37,19 @@ class AuthenticationScreenController extends GetxController {
       //if internet on
       if (!networkState) return null;
 
-      Credential? credential;
+      // Credential? credential;
 
       switch (provider) {
         case AuthenticationProvider.Apple:
           // loading
           LoadingService.to.on();
-          credential = await AppleAuthenticationService().signIn();
+          await AppleAuthenticationService().signIn();
           LoadingService.to.off();
           break;
         case AuthenticationProvider.Google:
           // loading
           LoadingService.to.on();
-          credential = await GoogleAuthenticationService().signIn();
+          await GoogleAuthenticationService().signIn();
           LoadingService.to.off();
           break;
         case AuthenticationProvider.Anonymously:
@@ -64,7 +64,7 @@ class AuthenticationScreenController extends GetxController {
           if (confirmation != null && confirmation) {
             // loading
             LoadingService.to.on();
-            credential = await AnonymousAuthenticationService().signIn();
+            await AnonymousAuthenticationService().signIn();
             LoadingService.to.off();
           }
 
@@ -72,10 +72,12 @@ class AuthenticationScreenController extends GetxController {
         default:
       }
 
-      // return back with credential=
-      return credential;
+      // // return back with credential=
+      // return credential;
+
+      return Get.offAllNamed('/splash');
+
     } catch (e) {
-      print('[[[[[[credential error !!]]]]]] ${e}');
       // loading
       LoadingService.to.off();
       return null;
