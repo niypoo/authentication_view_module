@@ -75,8 +75,6 @@ class AuthenticationScreenController extends GetxController {
       // // return back with credential=
       // return credential;
 
-      return Get.offAllNamed('/splash');
-
     } catch (e) {
       // loading
       LoadingService.to.off();
